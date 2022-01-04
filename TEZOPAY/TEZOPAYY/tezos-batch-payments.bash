@@ -4,6 +4,7 @@
 ### Usage help and command line argument handling
 ###
 
+
 function usage() {
   echo "Usage instructions:"
   echo "bash tezos-batch-payments.bash [options]"
