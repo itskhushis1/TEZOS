@@ -4,7 +4,6 @@
 ### Usage help and command line argument handling
 ###
 
-
 function usage() {
   echo "Usage instructions:"
   echo "bash tezos-batch-payments.bash [options]"
@@ -143,23 +142,6 @@ checkDepsAndArgs() {
     exit 1
   fi
 
-
-  ###
-  ### Just a big ol' header
-  ###
-
-  echo "****************************************************************"
-  echo "***             Tezos Batch Payout Script                    ***"
-  echo "***                by Figment Networks                       ***"
-  echo "***              https://figment.network                     ***"
-  echo "*** https://github.com/figment-networks/tezos-batch-payments ***"
-  echo "****************************************************************"
-  echo
-
-
-  ###
-  ### Recommended to run in tmux or screen
-  ###
 
   if [ ! -n "$STY" ] && [ ! -n "$TMUX" ]; then
     echo '*** Warning: Not running in screen or tmux session!'
